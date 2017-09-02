@@ -101,5 +101,12 @@ RUN set -x \
 		exit 1; \
 	fi
 
+
+### Add Files
+   ADD install /
+
+### Networking Configuration
 EXPOSE 8080
-CMD ["catalina.sh", "run"]
+
+
+

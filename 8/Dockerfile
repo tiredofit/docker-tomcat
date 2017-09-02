@@ -103,8 +103,9 @@ RUN set -x \
 		exit 1; \
 	fi
 
+### Add Files
+   ADD install /
+
 ### Networking Configuration
 EXPOSE 8080
 
-### Entrpoint Configuration
-CMD ["catalina.sh", "run"]
